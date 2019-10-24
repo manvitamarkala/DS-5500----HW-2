@@ -29,9 +29,14 @@ The second stacked line is a good thought in a way of showing the top to bottom 
 For the visualisations for relationship between income, life expectancy, and child mortality over time, I have looked in the graphs presented in :
 https://github.com/karangm-dev/ds5500-hw1/blob/master/app.pdf
 
-The visualisation consists of income, life expectancy, and child mortality trends and correlation graphs at an overall level and 
-also at an individual continent level to analyse each continents relationship. The trends are similar to the way I represented by graphs to understand how each of the individual metrics is changing over time. Next the most interesting way 
+### Describe the visualization and how it is similar and/or different from yours. Is it easy to interpret? Does it effectively visualize what is being asked? Why or why not?
 
+The visualisation consists of income, life expectancy, and child mortality trends and correlation graphs at an overall level and 
+also at an individual continent level to analyse each continents relationship. The trends are similar to the way I represented my graphs to understand how each of the individual metrics is changing over time both at an overall level and continent wise. 
+
+The most interesting aspect of the visualisation was the correlation graph over time, each of the 9 cross 9 grid represents the relationship between the metrics (2 at a time) over the years which I particulary found very interesting and easy to intepret.The last conclusion drawn from the correlation graph which is mentioned in the analysis seems very apt and crisp with respect to the visualisation.
+
+## Problem 4
 
 
 
