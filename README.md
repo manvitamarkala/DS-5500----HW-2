@@ -53,7 +53,7 @@ Then I constructed a simple linear regression for the two metrics and found that
 ###### Figure 2: Linear Regression between Income and Life Expectancy
 
 
-![Q4.2.1[]{label="fig:Q4.2.1"}](Q4.2.1.png)
+![Q4.2.1[]{label="fig:Q4.2.1"}](Q4.2.1.PNG)
 ###### Figure 3: Ordinary Least Square Regression Results
 
 
@@ -86,7 +86,7 @@ Then I constructed a simple regression for the two metrics and found that they i
 ###### Figure 7: Linear Regression between Income Vs Child Mortality
 
 
-![Q5.2.1[]{label="fig:Q5.2.1"}](Q5.2.1.png)
+![Q5.2.1[]{label="fig:Q5.2.1"}](Q5.2.1.PNG)
 ###### Figure 8: Ordinary Least Square Regression Results
 
 Then I built some more models by performing some data transformations on my x and y variables. The first data trasformation in figure 9 shows the model between log(Child Mortality) Vs Income and has achieved an R squared of 0.758 and then I further applied some data transformation shown in figure 11 and represented a model between 'log(Child Mortality) Vs (Income+log(Income)' - A combination of log and linear variables and attained a good R squared of 0.944 and the graph looks to have the line and scatter plot lying close to each other.Performing a test analysis would help determing, that this model has been involved with a lot of smoothing and thus would result in over fitting or not. We also observe that the coffecients of X are negative in this case as opposed to problem 4 since Income and mortality are following a negative trend as seen in figure 6
@@ -95,14 +95,14 @@ Then I built some more models by performing some data transformations on my x an
 ###### Figure 9: Linear Regression between Income Vs log(Child Mortality)
 
 
-![Q5.3.1[]{label="fig:Q5.3.1"}](Q5.3.1.png)
+![Q5.3.1[]{label="fig:Q5.3.1"}](Q5.3.1.PNG)
 ###### Figure 10: Ordinary Least Square Regression Results
 
 ![Q5.4[]{label="fig:Q5.4"}](Q5.4.png)
 ###### Figure 11: Linear Regression between log(Child Mortality) Vs (Income+log(Income)
 
 
-![Q5.4.1[]{label="fig:Q5.4.1"}](Q5.4.1.png)
+![Q5.4.1[]{label="fig:Q5.4.1"}](Q5.4.1.PNG)
 ###### Figure 12: Ordinary Least Square Regression Results
 
 The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.Log(X)+B.X+C
