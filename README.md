@@ -54,6 +54,7 @@ Then I constructed a simple linear regression for the two metrics and found that
 
 
 <img src="Q4.2.1.PNG" width="400" height ="400">
+
 ###### Figure 3: Ordinary Least Square Regression Results
 
 
@@ -65,11 +66,12 @@ But I further wanted to understand the relationship better and increase the R sq
 
 
 <img src="Q4.3.1.PNG" width="400" height ="400">
+
 ###### Figure 5: Ordinary Least Square Regression Results
 
 Based on the above regression analysis, The equation of the line/curve can be deduced to Y=A.Log(X)+B
 
-## Problem 4
+## Problem 5
 
 ### Choose and fit one or more models to quantify the relationship betweem income (GDP per capita) and child mortality over time.
 
@@ -87,6 +89,7 @@ Then I constructed a simple regression for the two metrics and found that they i
 
 
 <img src="Q5.2.1.PNG" width="400" height ="400">
+
 ###### Figure 8: Ordinary Least Square Regression Results
 
 Then I built some more models by performing some data transformations on my x and y variables. The first data trasformation in figure 9 shows the model between log(Child Mortality) Vs Income and has achieved an R squared of 0.758 and then I further applied some data transformation shown in figure 11 and represented a model between 'log(Child Mortality) Vs Income+sqrt(Income)' - A combination of sqrt and linear variables and attained a good R squared of 0.944 and the graph looks to have the line and scatter plot lying close to each other.
@@ -99,6 +102,7 @@ Performing a test analysis would help determing whether this model has been invo
 
 
 <img src="Q5.3.1.PNG" width="400" height ="400">
+
 ###### Figure 10: Ordinary Least Square Regression Results
 
 
@@ -107,6 +111,7 @@ Performing a test analysis would help determing whether this model has been invo
 
 
 <img src="Q5.4.1.PNG" width="400" height ="400">
+
 ###### Figure 12: Ordinary Least Square Regression Results
 
 The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.X+B.sqrt(X)+C where A is negative.
