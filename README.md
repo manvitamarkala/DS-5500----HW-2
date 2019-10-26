@@ -44,7 +44,7 @@ Firstly I constructed a dataframe consisting of income, life expectancy values a
 
 Figure 1 shows the relationship between income and life expectancy over time. The relationship looks somewhat linear in the sense, with increasing income we observe an increase in life expectancy, which is expected out of intuition.
 
-![Lifeexpectancy vs income[]{label="fig:Lifeexpectancyvsincome" ! | width =100 |height =100}](Q4.1.png)
+![Lifeexpectancy vs income[]{label="fig:Lifeexpectancyvsincome"}](Q4.1.png)
 ###### Figure 1: Life Expectancy Vs Income
 
 Then I constructed a simple linear regression for the two metrics and found that they indeed capture a linear relationship. The reason I chose linear regression is because the data was very finite and small and also it was difficult to show cross dimensions given three attributes namely time, income and expectancy. The R squared for this regression analysis turned out to be 0.925 which was good in terms of explaining the relation
@@ -53,7 +53,7 @@ Then I constructed a simple linear regression for the two metrics and found that
 ###### Figure 2: Linear Regression between Income and Life Expectancy
 
 
-![Q4.2.1[]{label="fig:Q4.2.1"}](Q4.2.1.PNG)
+<img src="Q4.2.1" width="400" height ="400">
 ###### Figure 3: Ordinary Least Square Regression Results
 
 
@@ -64,7 +64,7 @@ But I further wanted to understand the relationship better and increase the R sq
 ###### Figure 4: Linear Regression between log(Income) and Life Expectancy
 
 
-![Q4.3.1[]{label="fig:Q4.3.1"}](Q4.3.1.PNG)
+<img src="Q4.3.1" width="400" height ="400">
 ###### Figure 5: Ordinary Least Square Regression Results
 
 Based on the above regression analysis, The equation of the line/curve can be deduced to Y=A.Log(X)+B
@@ -86,16 +86,19 @@ Then I constructed a simple regression for the two metrics and found that they i
 ###### Figure 7: Linear Regression between Income Vs Child Mortality
 
 
-![Q5.2.1[]{label="fig:Q5.2.1"}](Q5.2.1.PNG)
+<img src="Q5.2.1" width="400" height ="400">
 ###### Figure 8: Ordinary Least Square Regression Results
 
-Then I built some more models by performing some data transformations on my x and y variables. The first data trasformation in figure 9 shows the model between log(Child Mortality) Vs Income and has achieved an R squared of 0.758 and then I further applied some data transformation shown in figure 11 and represented a model between 'log(Child Mortality) Vs Income+sqrt(Income)' - A combination of sqrt and linear variables and attained a good R squared of 0.944 and the graph looks to have the line and scatter plot lying close to each other.Performing a test analysis would help determing, that this model has been involved with a lot of smoothing and thus would result in over fitting or not. We also observe that the coffecients of X are negative in this case as opposed to problem 4 since Income and mortality are following a negative trend as seen in figure 6
+Then I built some more models by performing some data transformations on my x and y variables. The first data trasformation in figure 9 shows the model between log(Child Mortality) Vs Income and has achieved an R squared of 0.758 and then I further applied some data transformation shown in figure 11 and represented a model between 'log(Child Mortality) Vs Income+sqrt(Income)' - A combination of sqrt and linear variables and attained a good R squared of 0.944 and the graph looks to have the line and scatter plot lying close to each other.
+
+
+Performing a test analysis would help determing whether this model has been involved with a lot of smoothing and thus would result in over fitting or not. We also observe that the coffecients of X are negative in this case as opposed to problem 4 since Income and mortality are following a negative trend as seen in figure 6
 
 ![Q5.3[]{label="fig:Q5.3"}](Q5.3.png)
 ###### Figure 9: Linear Regression between Income Vs log(Child Mortality)
 
 
-![Q5.3.1[]{label="fig:Q5.3.1"}](Q5.3.1.PNG)
+<img src="Q5.3.1" width="400" height ="400">
 ###### Figure 10: Ordinary Least Square Regression Results
 
 
@@ -103,7 +106,7 @@ Then I built some more models by performing some data transformations on my x an
 ###### Figure 11: Linear Regression between log(Child Mortality) Vs Income+sqrt(Income)
 
 
-![Q5.4.1[]{label="fig:Q5.4.1"}](Q5.4.1.PNG)
+<img src="Q5.4.1" width="400" height ="400">
 ###### Figure 12: Ordinary Least Square Regression Results
 
 The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.X+B.sqrt(X)+C where A is negative.
