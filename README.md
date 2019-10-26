@@ -98,6 +98,7 @@ Then I built some more models by performing some data transformations on my x an
 ![Q5.3.1[]{label="fig:Q5.3.1"}](Q5.3.1.PNG)
 ###### Figure 10: Ordinary Least Square Regression Results
 
+
 ![Q5.4[]{label="fig:Q5.4"}](Q5.4.png)
 ###### Figure 11: Linear Regression between log(Child Mortality) Vs Income+sqrt(Income)
 
@@ -106,8 +107,3 @@ Then I built some more models by performing some data transformations on my x an
 ###### Figure 12: Ordinary Least Square Regression Results
 
 The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.X+B.sqrt(X)+C where A is negative.
-
- 
-
-
-
