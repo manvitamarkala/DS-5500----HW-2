@@ -47,29 +47,38 @@ Figure 1 shows the relationship between income and life expectancy over time. Th
 ![Lifeexpectancy vs income[]{label="fig:Lifeexpectancyvsincome"}](Q4.1.png)
 ###### Figure 1: Life Expectancy Vs Income
 
+I wanted to understand the relationship between life expectancy, income and time on a very simple basis first as it looks complicated
+to build a model against three variables. I thus constructed a correlation matrix amongst the variables and got the following figure:
+
+<img src="Q4.1.1.PNG" width="400" height ="400">
+
+###### Figure 2: Correlation Matrix between Life Expectancy, Income and Time
+
+The above figure explains a high positive correlation between each of the metrics, time vs life expectany, time vs income, life expectancy vs income.Understanding the relationship between our primary variables life expectancy and income, will somehow help us understand the relationship of these variables with time too.
+
 Then I constructed a simple linear regression for the two metrics and found that they indeed capture a linear relationship. The reason I chose linear regression is because the data was very finite and small and also it was difficult to show cross dimensions given three attributes namely time, income and expectancy. The R squared for this regression analysis turned out to be 0.925 which was good in terms of explaining the relation
 
 ![Q4.2[]{label="fig:Q4.2"}](Q4.2.png)
-###### Figure 2: Linear Regression between Income and Life Expectancy
+###### Figure 3: Linear Regression between Income and Life Expectancy
 
 
 <img src="Q4.2.1.PNG" width="400" height ="400">
 
-###### Figure 3: Ordinary Least Square Regression Results
+###### Figure 4: Ordinary Least Square Regression Results
 
 
 But I further wanted to understand the relationship better and increase the R squared coefficient as its possible to have higher value because of lesser number of data points and thus applied a log tranformation for income and produced the regression curve. After doing this I got an R squared of 0.958 which is definitely an improvement from the one i observed previously but further data tranformations could have helped in fitting the model better, but it could also lead to over-fitting in these cases.
 
 
 ![Q4.3[]{label="fig:Q4.3"}](Q4.3.png)
-###### Figure 4: Linear Regression between log(Income) and Life Expectancy
+###### Figure 5: Linear Regression between log(Income) and Life Expectancy
 
 
 <img src="Q4.3.1.PNG" width="400" height ="400">
 
-###### Figure 5: Ordinary Least Square Regression Results
+###### Figure 6: Ordinary Least Square Regression Results
 
-Based on the above regression analysis, The equation of the line/curve can be deduced to Y=A.Log(X)+B
+Based on the above regression analysis, The equation of the line/curve can be deduced to Y=A.Log(X)+B and since we have observed the high positive correlation with time, setting aside other factors/changes and assuming the effects to be constant, we can partially conclude that these variables have a positive linear relationship with time.
 
 ## Problem 5
 
@@ -77,20 +86,29 @@ Based on the above regression analysis, The equation of the line/curve can be de
 
 Firstly I constructed a dataframe consisting of income, child mortality values across time and different countries. To build a model against the two metrics over time, I wanted to aggregate the quantities to get a time level data and eliminate country specific information and thus formed a dataframe grouped by time, and determined the average income and total child mortality values.
 
-Figure 6 shows the relationship between income and child mortality over time. The relationship looks somewhat linear but negatively co-related in the sense, with increasing income we observe a decrease in child mortality, which is kind of expected out of intuition.
+Figure 7 shows the relationship between income and child mortality over time. The relationship looks somewhat linear but negatively co-related in the sense, with increasing income we observe a decrease in child mortality, which is kind of expected out of intuition.
 
 ![Q5.1[]{label="fig:Q5.1"}](Q5.1.png)
-###### Figure 6: Income Vs Child Mortality
+###### Figure 7: Income Vs Child Mortality
+
+I wanted to understand the relationship between child deaths, income and time on a very simple basis first as it looks complicated
+to build a model against three variables. I thus constructed a correlation matrix amongst the variables and got the following figure:
+
+<img src="Q5.1.1.PNG" width="400" height ="400">
+
+###### Figure 8: Correlation Matrix between Child deaths, Income and Time
+
+The above figure explains a high positive correlation between time and income, a negative relationship between time and child deaths and child deaths and income. This correlation matrix individually explains the relation between each of the metrics and then understanding the relationship between our primary variables child death and income, will somehow help us understand the relationship of these variables with time too.
 
 Then I constructed a simple regression for the two metrics and found that they indeed capture a negative relationship. The reason I chose linear regression is because the data was very finite and small and also it was difficult to show cross dimensions given three attributes namely time, income and child mortality. The R squared for this regression analysis turned out to be 0.689 and it needed further data transformations/modelling to understand the relationship better.
 
 ![Q5.2[]{label="fig:Q5.2"}](Q5.2.png)
-###### Figure 7: Linear Regression between Income Vs Child Mortality
+###### Figure 9: Linear Regression between Income Vs Child Mortality
 
 
 <img src="Q5.2.1.PNG" width="400" height ="400">
 
-###### Figure 8: Ordinary Least Square Regression Results
+###### Figure 10: Ordinary Least Square Regression Results
 
 Then I built some more models by performing some data transformations on my x and y variables. The first data trasformation in figure 9 shows the model between log(Child Mortality) Vs Income and has achieved an R squared of 0.758 and then I further applied some data transformation shown in figure 11 and represented a model between 'log(Child Mortality) Vs Income+sqrt(Income)' - A combination of sqrt and linear variables and attained a good R squared of 0.944 and the graph looks to have the line and scatter plot lying close to each other.
 
@@ -98,20 +116,21 @@ Then I built some more models by performing some data transformations on my x an
 Performing a test analysis would help determing whether this model has been involved with a lot of smoothing and thus would result in over fitting or not. We also observe that the coffecients of X are negative in this case as opposed to problem 4 since Income and mortality are following a negative trend as seen in figure 6
 
 ![Q5.3[]{label="fig:Q5.3"}](Q5.3.png)
-###### Figure 9: Linear Regression between Income Vs log(Child Mortality)
+###### Figure 11: Linear Regression between Income Vs log(Child Mortality)
 
 
 <img src="Q5.3.1.PNG" width="400" height ="400">
 
-###### Figure 10: Ordinary Least Square Regression Results
+###### Figure 12: Ordinary Least Square Regression Results
 
 
 ![Q5.4[]{label="fig:Q5.4"}](Q5.4.png)
-###### Figure 11: Linear Regression between log(Child Mortality) Vs Income+sqrt(Income)
+###### Figure 13: Linear Regression between log(Child Mortality) Vs Income+sqrt(Income)
 
 
 <img src="Q5.4.1.PNG" width="400" height ="400">
 
-###### Figure 12: Ordinary Least Square Regression Results
+###### Figure 14: Ordinary Least Square Regression Results
 
-The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.X+B.sqrt(X)+C where A is negative.
+The equation to explain the relationship between Life Expectancy Vs Child Mortality would then become log(Y)=A.X+B.sqrt(X)+C where A is negative. From the correlation matrix, maybe we can also conclude a model with time would be inversely related with child deaths and 
+positive linearly dependant on income.
